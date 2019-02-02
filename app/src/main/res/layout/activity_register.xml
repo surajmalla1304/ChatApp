@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suraj.chatapp.RegisterActivity">
+
+    <EditText
+        android:id="@+id/e_uname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="User Name" />
+
+    <EditText
+        android:id="@+id/e_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e_uname"
+        android:layout_alignStart="@+id/e_uname"
+        android:layout_below="@+id/e_uname"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/e_mail" />
+
+    <EditText
+        android:id="@+id/e_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/e_email"
+        android:layout_alignStart="@+id/e_email"
+        android:layout_below="@+id/e_email"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/e_email"
+        android:layout_alignRight="@+id/e_email"
+        android:layout_below="@+id/e_email"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Register Now" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/bar1"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"/>
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/bar1"/>
+</RelativeLayout>

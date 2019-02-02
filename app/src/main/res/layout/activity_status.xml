@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suraj.chatapp.StatusActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/bar3"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:ems="10"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Your Status"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="79dp"
+        android:text="Change Status"
+        android:textColor="@color/colorAccent"
+        android:backgroundTint="@color/colorPrimary"/>
+
+
+</RelativeLayout>

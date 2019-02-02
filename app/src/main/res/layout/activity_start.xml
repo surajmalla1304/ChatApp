@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.suraj.chatapp.StartActivity"
+    android:background="#e17055">
+
+
+    <Button
+        android:id="@+id/b_reg"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginBottom="45dp"
+        android:text="Need an Account?" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/b_reg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:text="Already a Member" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:text="Welcome to Chat App"
+        android:textSize="25dp"/>
+
+</RelativeLayout>
